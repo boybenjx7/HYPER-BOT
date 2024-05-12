@@ -1339,7 +1339,7 @@ const messageText = `_*< USUARIO SUSPENDIDO />*_\n
             }
           }
           if (m.limit) {
-            m.reply('*🐲 Se utilizaron ' + +m.limit + ' diamante(s) (limites).*');
+            m.reply('*💜 Se utilizaron ' + +m.limit + ' diamante(s) (limites).*');
           }
         }
         break;
@@ -1499,8 +1499,8 @@ export async function callUpdate(callUpdate) {
         const callmsg = await mconn.conn.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, {mentions: [nk.from]});
         // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
         // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿 💜;;;\nFN:𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿 💜\nORG:𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿 💜\nTITLE:\nitem1.TEL;waid=59168683798:+591 68683798\nitem1.X-ABLabel:𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿 💜\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿 💜\nEND:VCARD`;
-        await mconn.conn.sendMessage(nk.from, {contacts: {displayName: '𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿 💜', contacts: [{vcard}]}}, {quoted: callmsg});
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝙓𝙞𝙖𝘽𝙤𝙩-𝙈𝘿 💜;;;\nFN:𝙓𝙞𝙖𝘽𝙤𝙩-𝙈𝘿 💜\nORG:𝙓𝙞𝙖𝘽𝙤𝙩-𝙈𝘿 💜\nTITLE:\nitem1.TEL;waid=59168683798:+591 68683798\nitem1.X-ABLabel:𝙓𝙞𝙖𝘽𝙤𝙩-𝙈𝘿 💜\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:𝙓𝙞𝙖𝘽𝙤𝙩-𝙈𝘿 💜\nEND:VCARD`;
+        await mconn.conn.sendMessage(nk.from, {contacts: {displayName: '𝙓𝙞𝙖𝘽𝙤𝙩-𝙈𝘿 💜', contacts: [{vcard}]}}, {quoted: callmsg});
         await mconn.conn.updateBlockStatus(nk.from, 'block');
       }
     }
@@ -1546,7 +1546,7 @@ global.dfail = (type, m, conn) => {
     restrict: '💜 𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒇𝒖𝒆 𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒑𝒐𝒓 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕.',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '⚠ 𝘼𝙙𝙫𝙚𝙧𝙩𝙚𝙣𝙘𝙞𝙖', body: '𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿 💜', thumbnail: imagen1, sourceUrl: 'https://www.instagram.com/usxr_angelito/'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '⚠ 𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼', body: '𝙓𝙞𝙖𝘽𝙤𝙩-𝙈𝘿 💜', thumbnail: imagen1, sourceUrl: 'https://www.instagram.com/usxr_angelito/'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 
