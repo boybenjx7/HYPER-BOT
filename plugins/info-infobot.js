@@ -21,28 +21,21 @@ const handler = async (m, { conn, usedPrefix }) => {
   const old = performance.now();
   const neww = performance.now();
   const speed = neww - old;
-  const info = `
-┌───────────────────┐   
-│
-│➼🍭𝗢𝘄𝗻𝗲𝗿:Karim 
-│➼🍪𝗣𝗿𝗲𝗳𝗶𝘅: ${usedPrefix}
-│➼🍸𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗰𝗵𝗮𝘁𝘀:${chats.length - groups.length}
-│➼🍹𝗧𝗼𝘁𝗮𝗹 𝗴𝗿𝘂𝗽𝗼𝘀:${groups.length}
-│➼🍷𝗧𝗼𝘁𝗮𝗹 𝗰𝗵𝗮𝘁𝘀:${chats.length} 
-│➼🍬𝗧𝗶𝗺𝗲:${uptime}
-│➼🍧𝗨𝘀𝗲𝗿𝘀:${totalreg} 𝚗𝚞𝚖𝚎𝚛𝚘𝚜
-│➼🍨𝗔𝘂𝘁𝗼𝗯𝗶𝗼:${autoread ? "𝑶𝒏√" : "𝑶𝒇𝒇√"}
-│➼🍥𝗥𝗲𝘀𝘁𝗿𝗶𝗰𝘁:${restrict ? "𝑶𝒏√" : "𝑶𝒇𝒇√"} 
-│➼🍰𝗣𝗰𝗼𝗻𝗹𝘆:${pconly ? "𝑶𝒏√" : "𝑶𝒇𝒇√"}
-│➼🎂𝗚𝗰𝗼𝗻𝗹𝘆:${gconly ? "𝑶𝒏√" : "𝑶𝒇𝒇√"}
-│➼🥧𝗠𝗼𝗱𝗼:${self ? "𝑷𝒓𝒊𝒗𝒂𝒕𝒆√" : "𝑷𝒖𝒃𝒍𝒊𝒄√"}
-│➼🍵𝗽𝗿𝗶𝘃𝗮𝘁𝗲:${antiprivado ? "𝑶𝒏√" : "𝑶𝒇𝒇√"}
-│➼🍦𝗦𝘂𝗯 𝗯𝗼𝘁𝘀:${modejadibot ? "𝑶𝒏√" : "𝑶𝒇𝒇√"}
-│➼🥠𝗔𝗻𝘁𝗶𝗰𝗮𝗹𝗹:${antiCall ? "𝑶𝒏√" : "𝑶𝒇𝒇√"}
-│➼🍿𝗣𝗶𝗻𝗴: ↓
-│${speed} ms
-└───────────────────┘
-`.trim();
+  const info = `*💜 I N F O R M A C I Ó N 💜*
+ 
+💜꙰᠁❥ 𝘾𝙧𝙚𝙖𝙙𝙤𝙧◞: Angelito
+💜꙰᠁❥ 𝙒𝙖: wa.me/59168683798
+💜꙰᠁❥ 𝙄𝙜:* @usxr_angelito
+💜꙰᠁❥ 𝙑𝙚𝙧𝙨𝙞𝙤𝙣: 3.2.0
+💜꙰᠁❥ 𝙋𝙧𝙚𝙛𝙞𝙟𝙤: ( . )
+💜꙰᠁❥ 𝙈𝙤𝙙𝙤: Publico
+💜꙰᠁❥ 𝘼𝙘𝙩𝙞𝙫𝙞𝙙𝙖𝙙: ${uptime}
+💜꙰᠁❥ 𝙐𝙨𝙪𝙖𝙧𝙞𝙤𝙨: ${totalreg}
+💜꙰᠁❥ 𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙: ${speed} ms
+💜꙰᠁❥ 𝘾𝙝𝙖𝙩 𝙥𝙧𝙞𝙫: ${chats.length - groups.length}
+💜꙰᠁❥ 𝘾𝙝𝙖𝙩 𝙜𝙧𝙪𝙥𝙖𝙡: ${groups.length}
+💜꙰᠁❥ 𝘾𝙝𝙖𝙩𝙨 𝙩𝙤𝙩𝙖𝙡: ${chats.length}
+💜꙰᠁❥ 𝙎𝙪𝙗-𝘽𝙤𝙩𝙨: ${modejadibot ? "activado" : "desactivado"}`.trim();
   const doc = [
     "pdf",
     "zip",
@@ -52,22 +45,22 @@ const handler = async (m, { conn, usedPrefix }) => {
   ];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const Message = {
-    document: { url: `https://github.com/Karim-off/DylanBot1` },
+    document: { url: `https://github.com/Karim-off/RubyBot-MD` },
     mimetype: `application/${document}`,
-    fileName: `[𝑫𝒚𝒍𝒂𝒏 𝑩𝒐𝒕]`,
+    fileName: `𝙓𝙞𝙖𝘽𝙤𝙩-𝙈𝘿`,
     fileLength: 99999999999999,
     pageCount: 200,
     contextInfo: {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: "https://github.com/Karim-off/DylanBot1",
+        mediaUrl: "https://www.instagram.com/usxr_angelito",
         mediaType: 2,
         previewType: "pdf",
-        title: "ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ",
+        title: "ꜱɪɢᴜᴇᴍᴇ ᴇɴ ɪɴꜱᴛᴀɢʀᴀᴍ",
         body: wm,
         thumbnail: imagen1,
-        sourceUrl: "https://github.com/Karim-off/DylanBot1",
+        sourceUrl: "https://www.instagram.com/usxr_angelito",
       },
     },
     caption: info,
@@ -78,7 +71,7 @@ const handler = async (m, { conn, usedPrefix }) => {
 };
 handler.help = ["infobot", "speed"];
 handler.tags = ["info", "tools"];
-handler.command = /^(ping|speed|infobot)$/i;
+handler.command = /^(Infobot|infobot)$/i;
 export default handler;
 
 function clockString(ms) {
